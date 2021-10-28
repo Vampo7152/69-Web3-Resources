@@ -1,0 +1,37 @@
+let btn = document.getElementById("btn");
+let output = document.getElementById("output");
+let resource = [
+  "God loves everyone!",
+  "Be ready for a better future!",
+  "its going to be a awesome year!",
+];
+btn.addEventListener('click', function(){
+   var randomResource = resource[Math.floor(Math.random()* resource.length)]
+output.innerHTML =  randomResource;
+})
+
+
+
+
+
+
+<!DOCTYPE ht      .ml>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+        </style>
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+   <button id="btn"> Get me there! </button>
+   <div id ="output">Here is the resouirceHere is the resouirce</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
